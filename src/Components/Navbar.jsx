@@ -38,12 +38,13 @@ function NavaBar({ username, setUsername }) {
         </Link>
       </div>
       {username ? (
-        <button
+        <Link
+          to={"/"}
           onClick={logOut}
           className="bg-white font-bold text-red-600 px-4 py-2 rounded-md"
         >
           {`HI, ${username}`}
-        </button>
+        </Link>
       ) : (
         <Link
           to={"/login"}
