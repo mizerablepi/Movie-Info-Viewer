@@ -16,7 +16,10 @@ function Login() {
   };
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex flex-col items-center justify-center p-8">
+      <div>
+        <h1 className="font-bold text-5xl">Welcome, Viewer!</h1>
+      </div>
       <form
         onSubmit={loginUser}
         className="flex flex-col bg-gray-200 p-8 rounded-lg mt-8 w-[20rem]"
