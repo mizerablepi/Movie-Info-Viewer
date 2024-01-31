@@ -16,7 +16,7 @@ function Index() {
         </div>
       </div>
       <div className="flex flex-col items-center my-8 ">
-        <div className="w-[30rem]">
+        <div className="md:w-[30rem]">
           <h2 className="font-bold text-2xl text-center pb-8">About Us.</h2>
           <p>This website was created becuase i had to, THE END.</p>
           <p>

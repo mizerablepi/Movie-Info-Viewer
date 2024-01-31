@@ -33,7 +33,7 @@ function ShowDetail() {
   }, [data]);
 
   return data ? (
-    <div className="flex">
+    <div className={`flex ${viewModal ? "h-screen overflow-hidden" : ""}`}>
       <div className="min-w-[16rem] w-1/5 flex flex-col p-4">
         <img
           src={data.image ? data.image.original : "/notFoundImg.jpg"}
@@ -92,12 +92,12 @@ function ShowDetail() {
       </div>
 
       <div
-        className={`absolute w-screen h-full bg-black/40 -top-0 ${
+        className={`absolute w-screen h-screen md:h-full bg-black/40 -top-0 ${
           viewModal ? "" : "hidden"
         }`}
       >
         <form
-          className="absolute flex flex-col bg-gray-200 p-8 rounded-lg mt-8 w-[20rem] top-[20%] left-[35%]"
+          className="absolute flex flex-col bg-gray-200 p-8 rounded-lg mt-8 w-screen h-screen top-0 left-0 md:h-auto md:w-[20rem] md:top-[20%] md:left-[35%]"
           id="bookTicket"
         >
           <label className="text-xl" htmlFor="movie">

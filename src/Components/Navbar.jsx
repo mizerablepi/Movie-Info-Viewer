@@ -14,7 +14,7 @@ function NavaBar({ username, setUsername }) {
 
   return (
     <nav className="flex gap-4 bg-red-500 p-4 ">
-      <div className="flex items-center">
+      <div className="items-center hidden md:flex">
         <span className="font-bold text-2xl text-white font-serif italic">
           SeeMyShow
         </span>
