@@ -9,12 +9,9 @@ function ShowList() {
       .then((output) => setData(output));
   }, []);
 
-  console.log(data);
-
-  // console.log(data[0].show);
   return data ? (
     <>
-      <div className="grid grid-cols-3 gap-y-16 my-10">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(20rem,1fr))] gap-y-16 my-10">
         {data.map((show) => {
           return <Card show={show.show} key={show.show.id} />;
         })}
