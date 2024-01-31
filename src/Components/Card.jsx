@@ -7,7 +7,6 @@ function Card({ show }) {
     summary.current.innerHTML = show.summary.slice(0, 150) + "<b>...</b>";
   }, []);
 
-  console.log(show.image);
   return (
     <div className="">
       <div className="relative flex w-80 flex-col rounded-xl bg-white text-gray-800 shadow-md shadow-black/55">
