@@ -4,6 +4,7 @@ import Index from "./Pages/index.jsx";
 import ShowDetail from "./Pages/ShowDetail.jsx";
 import ShowList from "./Pages/ShowList.jsx";
 import Root from "./Root.jsx";
+import Login from "./Pages/Login.jsx";
 
 export const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ export const router = createBrowserRouter([
       {
         path: "/shows/:id",
         element: <ShowDetail />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
     ],
   },
