@@ -13,8 +13,7 @@ function Card({ show }) {
         <div className="relative mx-4 -mt-6 h-56 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40">
           <img
             src={show.image != null ? show.image.original : "/notFoundImg.jpg"}
-            alt="img-blur-shadow"
-            layout="fill"
+            alt="show image"
           />
         </div>
         <div className="p-6">
