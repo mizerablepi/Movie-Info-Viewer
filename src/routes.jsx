@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import ErrorPage from "./Pages/Error.jsx";
-import Index from "./Pages/index.jsx";
+import Index from "./Pages/Index.jsx";
 import ShowDetail from "./Pages/ShowDetail.jsx";
 import ShowList from "./Pages/ShowList.jsx";
 import Root from "./Root.jsx";
